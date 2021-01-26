@@ -10,28 +10,89 @@
          body {
             margin: 0;
          }
-         .main {
+         .break {
+            flex-basis: 100%;
+            height: 0;
+         }
+         .center{
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
+         }
+         .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+         }
+         .logo-img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
          }
          .icons {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
          }
-
-         .logo {
+         .icons > div {
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
          }
+         @media screen and (max-width: 1000px) {
+            .logo-img {
+               width: 100%;
+            }
+         }
+         
       </style>
    </head>
    <body>
-      <div class="main">
-         <div class="logo">
-            <img src="logo.png" />
+      <div class="center">
+         <div class="main">
+            <div class="logo">
+               <img src="logo.png" class="logo-img"/>
+            </div>
+            <div class="break"></div>
+            <h1>YouTube Channels</h1>
+            <div class="break"></div>
+            <div class="icons">
+               <div>
+                  <a href="https://www.youtube.com/madekujisan">
+                     <img src="img/madekujiyt.png" title="Madekuji-san! YouTube channel."/>
+                  </a>
+               </div>
+               <div>
+                  <a href="https://www.youtube.com/channel/UCgS14jVN3a9Uy9KyNyzXQ8w">
+                     <img src="img/masaotyt.png" title="Masao T - VTuber content."/>
+                  </a>
+               </div>
+            </div>
+            <div class="break"></div>
+            <h1>Projects</h1>
+            <div class="break"></div>
+            <div class="icons">
+               <div>
+                  <a href="https://madekuji.github.io/holocalcu/">
+                     <img src="img/holocalcu.gif" title="Asacoco Keyboard"/>
+                  </a>
+               </div>
+               <div>
+                  <a href="https://madekuji.github.io/asacocokeyboard/">
+                     <img src="img/asacocokey.png" title="Asacoco Keyboard"/>
+                  </a>
+               </div>
+               <div>
+                  <a href="https://goodvtubersubs.github.io/">
+                     <img src="img/gvs.png" title="Good VTuber Subs Project"/>
+                  </a>
+               </div>
+            </div>
          </div>
-         
-       </div>
+      </div>
    </body>
 </html>
