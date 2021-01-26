@@ -2,21 +2,36 @@
 <html>
    <head>
       <title>Madekuji-san!</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
       <style>
-         section {
-            padding: 10rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+         html, body {
+            height: 100%;
+         }
+         body {
+            margin: 0;
+         }
+         .main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .logo {
          }
       </style>
    </head>
    <body>
-      <section>
-         <img src="logo.png" />
-      </section>
+      <div class="main">
+         <div class="logo">
+            <img src="logo.png" />
+         </div>
+         
+       </div>
    </body>
 </html>
