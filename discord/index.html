@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Madekuji-san!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            @font-face {
+                font-family: Whitney HTF;
+                src: url(whitney-book.woff2);
+            }
+            @font-face {
+                font-family: Whitney HTF;
+                src: url(whitney-semibold.woff2);
+                font-weight: 600;
+            }
+            html, body {
+                height: 100%;
+                font-family: 'Whitney HTF','Helvetica','Arial',sans-serif;
+                color: white;
+            }
+            body {
+                margin: 0;
+                background-color: #202225;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .break {
+                flex-basis: 100%;
+                height: 0;
+            }
+            .center{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .name{
+                font-weight: 600;
+                font-size: 18px;
+                margin-left: 15px;
+            }
+            .tag{
+                color: #b9bbbe;
+            }
+            button {
+                font-family: 'Whitney HTF','Helvetica','Arial',sans-serif;
+                background-color: #7289DA;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            button:hover {
+                background-color: #4E5D94; /* Green */
+                color: white;
+            }
+        </style>
+        <script>
+            function Clipboard_CopyTo(value) {
+            var tempInput = document.createElement("input");
+            tempInput.value = value;
+            document.body.appendChild(tempInput);
+            tempInput.focus();
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            }
+
+            function copy() {
+            Clipboard_CopyTo('Madekuji-san!#1337');
+            }
+        </script>
+   </head>
+   <body>
+        <div class="center">
+            <div class="main">
+                <div>
+                    <img src="profile.png" />
+                </div>
+                <div class="name">
+                    Madekuji-san!
+                </div>
+                <div class="tag">
+                    #1337
+                </div>
+                <div class="break"></div>
+                <div>
+                    <button id="Copy" onclick="copy()">Copy</button>
+                </div>
+            </div>
+        </div>
+   </body>
+</html>
